@@ -1,0 +1,438 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #07111f;
+    color: white;
+}
+
+
+/* NAVBAR */
+
+header {
+    height: 70px;
+    display: flex;
+    align-items: center;
+    padding: 0 7%;
+    border-bottom: 1px solid #1d3045;
+    position: sticky;
+    top: 0;
+    background: #07111fe8;
+    backdrop-filter: blur(10px);
+    z-index: 10;
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+    margin-right: auto;
+}
+
+.logo span {
+    color: #6ee7b7;
+}
+
+nav {
+    display: flex;
+    gap: 30px;
+}
+
+nav a {
+    color: #9eafc2;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: white;
+}
+
+header button,
+.hero button {
+    background: #6ee7b7;
+    color: #06131b;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+/* HERO */
+
+.hero {
+    max-width: 1150px;
+    margin: auto;
+    min-height: 570px;
+    padding: 90px 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+}
+
+.small-title {
+    color: #6ee7b7;
+    font-size: 12px;
+    letter-spacing: 2px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.hero h1 {
+    font-size: 65px;
+    line-height: 1;
+    margin-bottom: 25px;
+}
+
+.hero h1 span {
+    color: #6ee7b7;
+}
+
+.hero-text > p:not(.small-title) {
+    color: #92a4b8;
+    line-height: 1.7;
+    max-width: 520px;
+    margin-bottom: 25px;
+}
+
+
+/* CODE WINDOW */
+
+.code-box {
+    background: #0c1928;
+    border: 1px solid #243a52;
+    border-radius: 15px;
+    box-shadow: 0 20px 60px #0008;
+}
+
+.dots {
+    padding: 15px;
+    color: #60758b;
+    border-bottom: 1px solid #243a52;
+}
+
+.code-box pre {
+    padding: 30px;
+    color: #b7c7d8;
+    line-height: 1.8;
+}
+
+
+/* STATS */
+
+.stats {
+    max-width: 1050px;
+    margin: 0 auto 80px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    border: 1px solid #1d3045;
+    border-radius: 15px;
+}
+
+.stats div {
+    text-align: center;
+    padding: 25px;
+    border-right: 1px solid #1d3045;
+}
+
+.stats div:last-child {
+    border-right: none;
+}
+
+.stats h2 {
+    color: white;
+    font-size: 28px;
+}
+
+.stats p {
+    color: #8193a8;
+    margin-top: 8px;
+    font-size: 13px;
+}
+
+
+/* COURSES */
+
+.courses {
+    max-width: 1150px;
+    margin: auto;
+    padding: 30px;
+}
+
+.section-title {
+    margin-bottom: 30px;
+}
+
+.section-title p {
+    color: #6ee7b7;
+    font-size: 12px;
+    letter-spacing: 2px;
+}
+
+.section-title h2 {
+    font-size: 40px;
+    margin: 10px 0;
+}
+
+.section-title span {
+    color: #8fa1b5;
+}
+
+
+.filters {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 25px;
+}
+
+.filters button {
+    background: #0d1b2c;
+    border: 1px solid #263c53;
+    color: #b4c2d2;
+    padding: 10px 18px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+
+.course-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+}
+
+.course {
+    background: #0c1928;
+    border: 1px solid #20364d;
+    border-radius: 14px;
+    padding: 22px;
+}
+
+.course:hover {
+    transform: translateY(-4px);
+    border-color: #41617d;
+}
+
+.course-icon {
+    font-size: 35px;
+    margin-bottom: 18px;
+}
+
+.course h3 {
+    margin-bottom: 10px;
+}
+
+.course p {
+    color: #8498ad;
+    font-size: 13px;
+    line-height: 1.6;
+}
+
+.course-info {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+    color: #71869c;
+    font-size: 11px;
+}
+
+.progress {
+    height: 5px;
+    background: #1b2c40;
+    border-radius: 10px;
+}
+
+.progress div {
+    height: 100%;
+    background: #6ee7b7;
+    border-radius: 10px;
+}
+
+
+/* PRACTICE */
+
+.practice {
+    max-width: 1150px;
+    margin: 100px auto;
+    padding: 60px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    background: #0d2030;
+    border: 1px solid #214057;
+    border-radius: 20px;
+}
+
+.practice h2 {
+    font-size: 42px;
+    margin-bottom: 15px;
+}
+
+.practice p {
+    color: #91a3b7;
+    line-height: 1.7;
+}
+
+
+.quiz {
+    background: #07111f;
+    padding: 25px;
+    border-radius: 15px;
+    border: 1px solid #20384e;
+}
+
+.quiz > p:first-child {
+    color: #6ee7b7;
+    font-size: 11px;
+}
+
+.quiz h3 {
+    margin: 20px 0;
+    line-height: 1.5;
+}
+
+.quiz button {
+    display: block;
+    width: 100%;
+    margin: 8px 0;
+    padding: 12px;
+    text-align: left;
+    background: #0d1d2e;
+    color: #bdc9d6;
+    border: 1px solid #253c54;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+#quizResult {
+    margin-top: 15px;
+}
+
+
+/* FOOTER */
+
+footer {
+    border-top: 1px solid #1c3045;
+    padding: 40px 7%;
+    color: #7e91a7;
+}
+
+footer h3 {
+    color: white;
+    margin-bottom: 10px;
+}
+
+
+/* LOGIN */
+
+.modal {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: #000b;
+    place-items: center;
+    z-index: 20;
+}
+
+.modal.show {
+    display: grid;
+}
+
+.login-box {
+    width: 380px;
+    background: #0d1a2b;
+    padding: 30px;
+    border-radius: 15px;
+    border: 1px solid #28425c;
+}
+
+.login-box > button:first-child {
+    float: right;
+    background: none;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.login-box h2 {
+    margin: 30px 0 20px;
+}
+
+.login-box input {
+    width: 100%;
+    padding: 13px;
+    margin: 7px 0;
+    background: #071421;
+    border: 1px solid #28415b;
+    border-radius: 8px;
+    color: white;
+}
+
+.login-box > button:last-child {
+    width: 100%;
+    margin-top: 10px;
+    padding: 12px;
+    background: #6ee7b7;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 800px) {
+
+    nav {
+        display: none;
+    }
+
+    .hero {
+        grid-template-columns: 1fr;
+    }
+
+    .hero h1 {
+        font-size: 48px;
+    }
+
+    .course-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .practice {
+        grid-template-columns: 1fr;
+        margin: 60px 20px;
+        padding: 30px;
+    }
+
+    .stats {
+        margin: 20px;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+
+@media (max-width: 550px) {
+
+    .course-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .hero {
+        padding: 60px 20px;
+    }
+
+    .courses {
+        padding: 20px;
+    }
+
+}
