@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>CodeLearn</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<header>
+
+    <div class="logo">
+        &lt;/&gt; Code<span>Learn</span>
+    </div>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#courses">Courses</a>
+        <a href="#practice">Practice</a>
+        <a href="#dashboard">Dashboard</a>
+    </nav>
+
+    <button onclick="showLogin()">
+        Login
+    </button>
+
+</header>
+
+
+<section class="hero" id="home">
+
+    <div class="hero-text">
+
+        <p class="small-title">
+            LEARN • BUILD • GROW
+        </p>
+
+        <h1>
+            Learn coding.<br>
+            Build your <span>future.</span>
+        </h1>
+
+        <p>
+            Learn frontend, backend and programming
+            through simple lessons, practice and projects.
+        </p>
+
+        <button onclick="goToCourses()">
+            Start Learning →
+        </button>
+
+    </div>
+
+
+    <div class="code-box">
+
+        <div class="dots">
+            ● ● ●
+        </div>
+
+<pre>
+const developer = {
+    name: "You",
+    skills: [
+        "Frontend",
+        "Backend",
+        "DSA"
+    ]
+};
+
+function start() {
+    return "Let's code! 🚀";
+}
+</pre>
+
+    </div>
+
+</section>
+
+
+<section class="stats" id="dashboard">
+
+    <div>
+        <h2 id="courseCount">6</h2>
+        <p>Courses</p>
+    </div>
+
+    <div>
+        <h2 id="hours">24</h2>
+        <p>Hours Learned</p>
+    </div>
+
+    <div>
+        <h2 id="average">0%</h2>
+        <p>Average Progress</p>
+    </div>
+
+    <div>
+        <h2>100%</h2>
+        <p>Hands-on</p>
+    </div>
+
+</section>
+
+
+<section class="courses" id="courses">
+
+    <div class="section-title">
+
+        <p>CURRICULUM</p>
+
+        <h2>
+            Choose your learning path
+        </h2>
+
+        <span>
+            Learn the skills needed to become a developer.
+        </span>
+
+    </div>
+
+
+    <div class="filters">
+
+        <button onclick="filterCourses('All')">
+            All
+        </button>
+
+        <button onclick="filterCourses('Beginner')">
+            Beginner
+        </button>
+
+        <button onclick="filterCourses('Intermediate')">
+            Intermediate
+        </button>
+
+    </div>
+
+
+    <div class="course-grid" id="courseGrid">
+
+    </div>
+
+</section>
+
+
+<section class="practice" id="practice">
+
+    <div>
+
+        <p class="small-title">
+            DAILY PRACTICE
+        </p>
+
+        <h2>
+            One challenge a day.
+        </h2>
+
+        <p>
+            Practice programming questions
+            and improve your problem-solving skills.
+        </p>
+
+    </div>
+
+
+    <div class="quiz">
+
+        <p>QUESTION 01</p>
+
+        <h3>
+            Which language runs directly
+            in a web browser?
+        </h3>
+
+
+        <button onclick="answerQuiz('Python')">
+            A. Python
+        </button>
+
+        <button onclick="answerQuiz('Java')">
+            B. Java
+        </button>
+
+        <button onclick="answerQuiz('JavaScript')">
+            C. JavaScript
+        </button>
+
+        <button onclick="answerQuiz('C')">
+            D. C
+        </button>
+
+        <p id="quizResult"></p>
+
+    </div>
+
+</section>
+
+
+<footer>
+
+    <h3>
+        &lt;/&gt; CodeLearn
+    </h3>
+
+    <p>
+        Learn coding. Build projects. Grow your career.
+    </p>
+
+</footer>
+
+
+<div class="modal" id="loginModal">
+
+    <div class="login-box">
+
+        <button onclick="closeLogin()">
+            X
+        </button>
+
+        <h2>
+            Welcome Back 👋
+        </h2>
+
+        <input
+            type="email"
+            placeholder="Email"
+        >
+
+        <input
+            type="password"
+            placeholder="Password"
+        >
+
+        <button onclick="closeLogin()">
+            Login
+        </button>
+
+    </div>
+
+</div>
+
+
+<script src="app.js"></script>
+
+</body>
+
+</html>
